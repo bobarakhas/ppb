@@ -1,0 +1,147 @@
+.ppvx_action-menu__container___1-10-2 {
+  border-radius: 0.25rem;
+  min-width: 8rem;
+  max-width: 67.5rem;
+  max-height: 30rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  margin-top: 0.25rem;
+  z-index: 1060;
+  box-shadow: 0rem 0.1875rem 0.625rem rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  outline: 0.0625rem solid transparent;
+}
+.ppvx_action-menu___1-10-2 {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0 0.5rem 0;
+  display: none;
+}
+.ppvx_action-menu___1-10-2.ppvx_menu-list--multiline___1-10-2 .ppvx_menu-list__item--thumbnail___1-10-2 {
+  align-items: end;
+  margin-top: 0.375rem;
+}
+.ppvx_action-menu___1-10-2.ppvx_menu-list--multiline___1-10-2 .ppvx_menu-list__item___1-10-2 {
+  align-items: end;
+}
+.ppvx_action-menu___1-10-2[aria-hidden='false'] {
+  display: block;
+}
+.ppvx_action-menu___1-10-2.keyboard-active___1-10-2 .ppvx_action-menu__item___1-10-2:focus:after {
+  content: '';
+  position: absolute;
+  top: 0rem;
+  left: 0.25rem;
+  border: 0.125rem solid #0070ba;
+  box-shadow: 0 0 0 0.25rem #bfdbee;
+  border-radius: 0.25rem;
+  text-indent: 0.25rem;
+  width: calc(100% - 0.5rem);
+  height: calc(100% - 0rem);
+  pointer-events: none;
+}
+.ppvx_action-menu__item___1-10-2 {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  outline: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 46.9375rem) {
+  .ppvx_action-menu__item___1-10-2 {
+    padding: 0.75rem 1rem 0.75rem 1rem;
+  }
+}
+.ppvx_action-menu__item___1-10-2.ppvx_menu-list__item--hilite___1-10-2,
+.ppvx_action-menu__item___1-10-2:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(44, 46, 47, 0.08) 80%, rgba(44, 46, 47, 0.08) 100%), none;
+  background-size: 100% 500%;
+  background-position: 0 100%;
+  transition: background-position 0.3s ease-in-out;
+}
+.ppvx_action-menu__item___1-10-2:active {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(44, 46, 47, 0.12) 80%, rgba(44, 46, 47, 0.12) 100%), none;
+  background-size: 100% 500%;
+  background-position: 0 100%;
+  transition: background-position 0.3s ease-in-out;
+}
+.ppvx_action-menu__item--text___1-10-2 {
+  margin: 0;
+  /* overwrite default margin */
+  color: #2c2e2f;
+  font-family: PayPalSansBig-Regular, Helvetica Neue, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  pointer-events: none;
+}
+.ppvx_action-menu__item--thumbnail___1-10-2 {
+  pointer-events: none;
+  padding-right: 0.75rem;
+}
+[dir='rtl'] .ppvx_action-menu__item--thumbnail___1-10-2 {
+  padding-left: 0.75rem;
+  padding-right: 0;
+}
+.ppvx_action-menu__item--icon___1-10-2 {
+  pointer-events: none;
+  padding-right: 0.75rem;
+  color: #0070ba;
+}
+[dir='rtl'] .ppvx_action-menu__item--icon___1-10-2 {
+  padding-left: 0.75rem;
+  padding-right: 0;
+}
+.ppvx--v2___1-10-2 .ppvx_action-menu__container___1-10-2:not(.ppvx--v1___1-10-2),
+.ppvx_action-menu__container___1-10-2.ppvx--v2___1-10-2:not(.ppvx--v1___1-10-2) {
+  box-shadow: 0rem 0rem 0.125rem rgba(0, 0, 0, 0.04), 0rem 0.0625rem 0.75rem rgba(0, 0, 0, 0.08);
+  border-radius: 0.75rem;
+}
+@media (max-width: 46.9375rem) {
+  .ppvx--v2___1-10-2 .ppvx_action-menu___1-10-2:not(.ppvx--v1___1-10-2),
+  .ppvx_action-menu___1-10-2.ppvx--v2___1-10-2:not(.ppvx--v1___1-10-2) {
+    padding: 0.75rem 0 2.125rem 0;
+  }
+}
+.ppvx--v2___1-10-2 .ppvx_action-menu___1-10-2:not(.ppvx--v1___1-10-2).keyboard-active___1-10-2 .ppvx_action-menu__item___1-10-2:focus:after,
+.ppvx_action-menu___1-10-2.ppvx--v2___1-10-2:not(.ppvx--v1___1-10-2).keyboard-active___1-10-2 .ppvx_action-menu__item___1-10-2:focus:after {
+  content: '';
+  position: absolute;
+  top: 0rem;
+  left: 0.375rem;
+  border: 0.1875rem solid #1040c1;
+  box-shadow: 0 0 0 0.375rem rgba(16, 114, 235, 0.16);
+  border-radius: 0.25rem;
+  text-indent: 0.375rem;
+  width: calc(100% - 0.75rem);
+  height: calc(100% - 0rem);
+  pointer-events: none;
+}
+.ppvx--v2___1-10-2 .ppvx_action-menu___1-10-2:not(.ppvx--v1___1-10-2) .ppvx_action-menu__item___1-10-2,
+.ppvx_action-menu___1-10-2.ppvx--v2___1-10-2:not(.ppvx--v1___1-10-2) .ppvx_action-menu__item___1-10-2 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.ppvx--v2___1-10-2 .ppvx_action-menu___1-10-2:not(.ppvx--v1___1-10-2) .ppvx_action-menu__item--text___1-10-2,
+.ppvx_action-menu___1-10-2.ppvx--v2___1-10-2:not(.ppvx--v1___1-10-2) .ppvx_action-menu__item--text___1-10-2 {
+  color: #0c0c0d;
+  font-family: PayPalSansBig-Regular, Helvetica Neue, Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+}
+.ppvx--v2___1-10-2 .ppvx_action-menu___1-10-2:not(.ppvx--v1___1-10-2) .ppvx_action-menu__item--icon___1-10-2,
+.ppvx_action-menu___1-10-2.ppvx--v2___1-10-2:not(.ppvx--v1___1-10-2) .ppvx_action-menu__item--icon___1-10-2 {
+  color: #142c8e;
+}
+.ppvx_action-menu__loading-container___1-10-2 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*# sourceMappingURL=default~chatComponent~guest~pay-request-success~request-page~request-preview~send-page~send-success~~ffb93c1e.css.map*/
